@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<script>
+	function func() {
+		let password = document.getElementById("password").value;
+		let url = "http://localhost:8080/demo/check/" + password;
+		let token = document.getElementById("token");
+		function makeRequest() {
+			let xmlHttpReq = new XMLHttpRequest();
+			xmlHttpReq.onload = function() {
+				token.textContent= this.response;
+			}
+			;
+			xmlHttpReq.open("POST", url, true);
+			xmlHttpReq.send();
+		}
+		makeRequest();
+	}
+</script>
+
+<html lang="en">
+	<body>
+		<p>Password</p>
+
+		<div class="wrap-input100 validate-input" data-validate = "Password is required">
+			<input id="password" class="input100" type="password" name="pass" >
+			<span class="focus-input100"></span>
+		</div>
+
+		<br>
+
+		<div class="container-login100-form-btn m-t-17">
+			<button class="login100-form-btn" onclick="func()">
+				Sign In
+			</button>
+		</div>
+
+		<p id="token"></p>
+	</body>
+</html>

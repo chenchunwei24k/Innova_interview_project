@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+			http://www.springframework.org/schema/beans
+			http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+			http://www.springframework.org/schema/context
+			http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+    <context:annotation-config />
+
+    <context:component-scan base-package="conditions" />
+
+    <!-- test case for returning true-->
+    <bean class="java.lang.String">
+        <qualifier value="true"/>
+        <constructor-arg value="paeE15dwM" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="true"/>
+        <constructor-arg value="An23dyDsw" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="true"/>
+        <constructor-arg value="DjpDw;sj$2dk#q" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="true"/>
+        <constructor-arg value="FnVo8%D1j#o!w" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="true"/>
+        <constructor-arg value="$jeo(ewn)16qN#1@" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="true"/>
+        <constructor-arg value=")+dwnR849esSwp#" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="true"/>
+        <constructor-arg value="18ew#f!3@" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="true"/>
+        <constructor-arg value="RF3@15Esnq$)" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="true"/>
+        <constructor-arg value="DNie2!3%Sw9" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="true"/>
+        <constructor-arg value="sdfEo#T#416esE" />
+    </bean>
+
+    <!-- test case for returning false-->
+    <bean class="java.lang.String">
+        <qualifier value="false"/>
+        <constructor-arg value="EW#EJIew" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="false"/>
+        <constructor-arg value="sio@emp$!" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="false"/>
+        <constructor-arg value="#%NeRtr%" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="false"/>
+        <constructor-arg value="FJI*%+DW" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="false"/>
+        <constructor-arg value="@REe$eiwEkm$%" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="false"/>
+        <constructor-arg value="(%niFeDp#)" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="false"/>
+        <constructor-arg value="Q@~#DFrt*E" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="false"/>
+        <constructor-arg value="RMp0=/W@" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="false"/>
+        <constructor-arg value="WMOwrRi@%m;*" />
+    </bean>
+    <bean class="java.lang.String">
+        <qualifier value="false"/>
+        <constructor-arg value="@#rmp%*" />
+    </bean>
+
+</beans>
